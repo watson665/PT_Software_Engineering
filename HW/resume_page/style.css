@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    color: navy;
+}
+h3 {
+    color: darkcyan;
+}
+ul {
+    width: 10%;
+    margin: auto;
+}
+body {
+    background-color: tan;
+}
+#wrapper {
+    text-align: center;
+}
