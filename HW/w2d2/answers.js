@@ -43,3 +43,11 @@ console.log(dart)
 // Remove "Wolfy" from the wolfy array and replace it with "Gameboy"
 wolfy[0] = 'Gameboy'
 console.log(wolfy)
+
+//Yell at the Ninja Turtles
+//Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+const ninja = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+for (let i = 0; i < ninja.length; i++) {
+    ninja[i] = ninja[i].toUpperCase()
+    console.log(ninja[i])
+}
