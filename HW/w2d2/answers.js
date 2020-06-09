@@ -106,5 +106,17 @@ console.log(whereIsWaldo.length);
 whereIsWaldo[1][2] = 'No One';
 console.log(whereIsWaldo);
 
-
-
+//Excited Kitten
+//Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+for(let i = 0; i < 20; i++){
+    console.log('Love me, pet me! HSSSSSS!');
+}
+//For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+const kittyTalk = ['human why you taking pictures of me?', 'the catnip made me do it.', 'why does the red dot always get away?' ];
+let meow = Math.floor(Math.random() * 3) + 1;
+for(i = 0; i < 20; i++){
+    if (i % 2 === 0) {
+        console.log(kittyTalk[meow])   
+    } else
+        console.log('Love me, pet me! HSSSSSS!')}
+    
