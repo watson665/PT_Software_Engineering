@@ -130,12 +130,12 @@ const length = numsSort.length;
 
 if (length % 2 === 1){
     //lenght is odd
-    console.log(numsSort[(length/2) - .5])
-    return numsSort[(length/2) - .5]
+    console.log(numsSort[(length/2) - .5]);
+    return numsSort[(length/2) - .5];
 }
 else{
-    console.log
-    return (numsSort[lenght/2]+ numsSort[(length/2)-1])
+    console.log(numsSort[lenght/2]+ numsSort[(length/2)-1])
+    return (numsSort[lenght/2]+ numsSort[(length/2)-1]);
 }
 
     
