@@ -116,7 +116,26 @@ const kittyTalk = ['human why you taking pictures of me?', 'the catnip made me d
 let meow = Math.floor(Math.random() * 3) + 1;
 for(i = 0; i < 20; i++){
     if (i % 2 === 0) {
-        console.log(kittyTalk[meow])   
-    } else
-        console.log('Love me, pet me! HSSSSSS!')}
+        console.log(kittyTalk[meow]);   
+    } 
+    else{}
+        console.log('Love me, pet me! HSSSSSS!')};
+
+//Find the Median
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+    console.log(nums.length);
+const numsSort = nums.sort();
+    console.log(numsSort);
+const length = numsSort.length;
+
+if (length % 2 === 1){
+    //lenght is odd
+    console.log(numsSort[(length/2) - .5])
+    return numsSort[(length/2) - .5]
+}
+else{
+    console.log
+    return (numsSort[lenght/2]+ numsSort[(length/2)-1])
+}
+
     
