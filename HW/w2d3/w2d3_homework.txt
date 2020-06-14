@@ -1,0 +1,29 @@
+/*
+1. Why do you think Heinz made this change?
+So that their customers could have a more user friendly way to get ketchup out of the bottle. As the ketchup is used it gets harder to get the ketchup out of the bottle in the old design versus the new design. The laws of gravity show that a more friendlier user experience would be to have the opening at the bottom of the bottle versus the top.
+
+2. Discuss - How does this apply to web development?
+Having a user friendly interface in web development is crucial because it can make or break how customers interact with the applications. A good user interface is imperative because it allows users to understand how to navigate without a lot of help or direction.
+
+3. What's a site that you use all the time that has good UX?
+YouTube
+How is that site:
+Goal Focused - The site allows you to search & watch videos based on the content that the user is looking for.
+Invisible - The search bar is the first thing that you see when you go to the website; play/pause/ rewind buttons/ comments section are self- explanatory; and easy to navigate through.
+Forgiving - If you make a mistake you can always fix it easily (deleting comment, subscrubing/unsubcribing to a channel, selecting a different video to watch).
+Consistent - The pages are similar in layout.
+Smooth Onboarding - When you go the site it's easy to figure out how to navigate through it without a lof of instructions.
+
+4. We're going to create the game tic-tac-toe ... but before we begin, what are some user stories that we'll want to make sure we cover?
+🐘 Reminder - Write from the perspective of the user: "As a user I want to be able to click on x and have y happen" or “As a ____, I need a ____ in order to ____”.
+- As a user I want to be able to select if I am "X" or "O".
+- As a user I want the "X" and "O" to be different colors.
+- As a user I want to be able to view the tic-tac-toe layout (#).
+- As a user I want to be able to see the cursor over the area that I am thinking about selecting.
+- As a user I want to be able to know if I can or can't place my letter over the area that I selected.
+- As a user I want to hear and see something on my screen when I select the area for the letter I placed. 
+- As a user I want to be able to hear and see my competitors choice once they have selected an area.
+- As a user I want to know wether I won, lost, or it is a tie at the end of the game.
+- As a user I want the winner to have a line going through the 3 in a row.
+- As a user I would like a prompt to restart the game once it's completed.
+*/
