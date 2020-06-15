@@ -1,3 +1,4 @@
+//Datatypes Refresher
 //For each of the following, write which datatypes you would use to represent the data, and then give a small example of the data structure:
 
 //1. A light switch that can be either on or off.
@@ -60,8 +61,22 @@ const student4 = {
     favShows4: ['American Dragon: Jake Long', 'Cory in the House', 'Phineas and Ferb']
 }
 
-
-
+//Take it Easy
+// 1. Make an array that holds all of the colors of the rainbow.
+const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// 2. Write code that will access "blue" from the rainbow array.
+rainbowColors[4];
+console.log(rainbowColors[4]);
+// 3. Make an object that is called your name and holds the information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
+const deamber = {
+    favFood: ['chicken', 'ice cream', 'pasta'],
+    hobby: 'traveling',
+    residency: 'Columbus, Ohio',
+    favDatatype: 'boolean'
+}
+//4. Write code that will access your hobby from the object that you just created.
+deamber.hobby;
+console.log(deamber.hobby);
 
 
 
