@@ -99,4 +99,26 @@ console.log(crazyObject.larry.nicknames[1]);
 console.log(crazyObject.larry.characters[1].name);
 //6. Add the quote "I'm trying to elevate small talk to medium talk" to Larry's quote array. Confirm that it was added.
 crazyObject.larry.quotes.push('I\'m trying to elevate small talk to medium talk');
-console.log(crazyObject.larry.quotes)
+console.log(crazyObject.larry.quotes);
+
+
+//Object-ception
+const inception = {
+    reality: {
+        dreamLayer1: {
+            dreamLayer2: {
+                dreamLayer3: {
+                    dreamLayer4: {
+                        dreamLayer5: {
+                            dreamLayer6: {
+                                limbo: "Joseph Gordon Levitt"
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+ inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null;
+ console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo);
