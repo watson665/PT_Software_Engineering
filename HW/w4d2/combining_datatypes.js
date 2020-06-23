@@ -6,7 +6,7 @@
 const crayonBox = {
     'Color Names':['indigo', 'caribbean green', 'purple heart', 'scarlet']
 };
-//console.log(crayonBox['Color Names'][1]);
+console.log(crayonBox['Color Names'][1]);
 
 //2. Create an object bottle that has a property that is an object: cap. cap can have properties like material: 'metal' or 'plastic', color: blue or white etc. Log one of the properties of that inner object.
 const bottle = {
@@ -15,7 +15,7 @@ const bottle = {
         color: 'blue'
     }
 }
-//console.log(bottle.cap.material);
+console.log(bottle.cap.material);
 
 //3. Create an array called receipt that has at least one object in it. The inner objects should be items that have a name and a price. Log one of the properties of that inner object.
 const receipt = [
@@ -24,11 +24,11 @@ const receipt = [
     {item: 'gloves', price: 20},
     {item: 'boots', price: 200}
 ]
-//console.log(receipt[0].item);
+console.log(receipt[0].item);
 
 //4. Create an array called apartmentBuilding that has an array as one of its elements, the inner array should be the names of the tenants. Log one of the elements of the inner array.
 const apartmentBuilding = [ 'tenant names', ['Tom', 'Mike', 'Sam', 'Kim'], 'building number', 'lenght of lease'];
-//console.log(apartmentBuilding[1][3]);
+console.log(apartmentBuilding[1][3]);
 
 //////////////////////////////////////////////////////////////////////////
 /////Combine objects, arrays, and functions more than one level deep/////
@@ -43,7 +43,7 @@ const knit = () => {
     return obj.item
 }
 knit();
-//console.log(knit());
+console.log(knit());
 
 
 //2 Create a function crayonSelector that returns an object that has an array (you can reuse your crayonBox object). Log one of the elements of that array.
@@ -59,12 +59,12 @@ console.log(crayonSelector([0]));
 //3. Create a function powerButton that returns a function called options - options should console.log a simple message like select a song. Call that inner function
 const powerButton = () => {
     const options = () => {
-        //console.log('select a song');
+        console.log('select a song');
     }
      return options();
 }
 powerButton();
-//console.log(powerButton());
+console.log(powerButton());
 
 
 ///////////////////////////////////////////////////////
@@ -112,28 +112,28 @@ const addition = (num1, num2) => {
     return num1 + num2;
 }
 addition();
-//console.log(addition(5,5));
+console.log(addition(5,5));
 
 //Make a function subtract that takes two arguments (numbers) and subtracts them
 const subtraction = (num1, num2) => {
     return num1 - num2;
 }
 subtraction();
-//console.log(subtraction(5,5));
+console.log(subtraction(5,5));
 
 //Make a function multiply that takes two arguments and multiplies them
 const multiplication = (num1, num2) => {
     return num1 * num2;
 }
 multiplication();
-//console.log(multiplication(5,5));
+console.log(multiplication(5,5));
 
 //Make a function divide that takes two arguments and divides them
 const division = (num1, num2) => {
     return num1 / num2;
 }
 division();
-//console.log(division(5,5));
+console.log(division(5,5));
 
 /* Take a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
 Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
@@ -153,20 +153,20 @@ console.log(calculate(10, 10, division));
 //Clean up this code, so that it works and has function definitions in the correct place
 
 const bar = () => {
-    //console.log('bar here');
+    console.log('bar here');
 }
 bar();
 
 const foo = () => {
-    //console.log('foo here');
+    console.log('foo here');
 }
 foo();
 
 //Error reading: What is meant by the error(s) this produces?
-//foo();
-//const foo () => {
-    //console.log('hi');
-//}
+foo();
+const foo () => {
+    console.log('hi');
+}
 /* Error 1 is syntax error meaning that the assignment operator (=) is missing when initializing the variable.
 Error 2 is a reference error stating that the function foo() can't be invoked before it is initialized */ 
 
