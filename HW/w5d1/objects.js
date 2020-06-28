@@ -18,6 +18,7 @@ class Hamster {
     }
     static getPrice() {
         return this.price;
+        //method keeps appearing as undefined
     }  
 };
 
@@ -75,7 +76,7 @@ class Person {
         this.bankAccount - Hamster.getPrice()
         return this.bankAccount
         //hint: use getPrice 
-        //I could not figure out how to use the getPrice method in my code
+        //I could not figure out how to get the getPrice() to show as 15. I keep undefined as an answer.
     }
 }
 
@@ -113,7 +114,7 @@ console.log(Gus);
 //8. Have Timmy "buy" Gus
 Timmy.buyHamster(Gus);
 console.log(Timmy);
-//I can't get the cost of the hamster to subtract from the bank balance 
+//I can't get the cost of the hamster to subtract from the bank balance the value keeps coming up as undefined 
 //9. Age Timmy 15 years
 for(let i = 1; i <= 15; i++) {
     Timmy.ageUp();
