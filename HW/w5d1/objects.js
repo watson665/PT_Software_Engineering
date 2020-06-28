@@ -5,29 +5,6 @@
 //Hamster
 
 class Hamster {
-    constructor(owner, name) {
-        this.price = 15;
-        this.owner = owner;
-        this.name = name;
-    }
-    wheelRun() {
-        console.log('squeak squeak');
-    } 
-    eatFood() {
-        console.log('nibble nibble');
-    }
-    static getPrice() {      
-       return this.price 
-       //this keeps returning undefined 
-    }  
-}
-/////////////////////////////
-//////Creating Classes//////
-///////////////////////////
-
-//Hamster
-
-class Hamster {
     constructor(owner, name, price) {
         this.owner = owner;
         this.name = name;
@@ -100,4 +77,48 @@ class Person {
         //hint: use getPrice 
         //I could not figure out how to use the getPrice method in my code
     }
+}
+
+
+///////////////////////////////
+///Story with Person Class////
+/////////////////////////////
+
+//1. Instantiate a new Person named Timmy
+const Timmy = new Person ('Timmy',);
+console.log(Timmy);
+//2. Age Timmy five years
+for(let i = 1; i <= 5; i++) {
+    Timmy.ageUp();
+}
+console.log(Timmy);
+//3. At this point Timmy's a little bummed. As a precocious child, he feels he's "seen it all" already. Have him eat five times.
+for(let i = 1; i <= 5; i++) {
+    Timmy.eat();
+}
+console.log(Timmy);
+//4. Now Timmy's a little heavier than he wants to be. Kindergarten's coming up and he wants to look good. Have him exercise five times.
+for(let i = 1; i <= 5; i++) {
+    Timmy.exercise();
+}
+console.log(Timmy);
+//5. Age Timmy 9 years
+for(let i = 1; i <= 9; i++) {
+    Timmy.ageUp();
+}
+console.log(Timmy);
+//6. Create a hamster named "Gus" & 7. Set Gus's owner to the string "Timmy"
+const Gus = new Hamster('Timmy','Gus');
+console.log(Gus);
+//8. Have Timmy "buy" Gus
+Timmy.buyHamster(Gus);
+console.log(Timmy);
+//I can't get the cost of the hamster to subtract from the bank balance 
+//9. Age Timmy 15 years
+for(let i = 1; i <= 15; i++) {
+    Timmy.ageUp();
+}
+//10. Have Timmy eat twice
+for(let i = 1; i <= 2; i++) {
+    Timmy.eat();
 }
