@@ -1,6 +1,12 @@
 body {background-color: #4730db;
     text-align: center; 
 }
-h4.owl {
+.Owl {
     font-family: fantasy;
-};
+}
+.secret {
+    opacity: 0.5;
+}
+li {
+    list-style: none;
+}

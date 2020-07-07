@@ -19,7 +19,7 @@
     //Test yourself
     console.log(document);
 });
-*/
+
 
 ///////////////////////
 /////// Year 2 ///////
@@ -41,17 +41,64 @@ $(() => {
   //h3 element with your house
   const $h3 = $('<h3>').text('Gryffindor');
   $('body').append($h3);
+  //h4 element with your pet's name, his h4 element should have a class with a value of your pet type
+  //h4 element with your wand 
   const $h4 = [ 
     $('<h4>').addClass('owl').text('Starlight'),
     $('<h4>').text('Holly Wand with Unicorn Hair Core'),
   ];
   $('body').append($h4);
   console.log(document);
-
+});
+*/
 
 ///////////////////////
 /////// Year 3 ///////
 /////////////////////
+/*
+Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
+
+list items of
+
+butter beer
+invisibility cloak (add a class of secret)
+magic map (add a class of secret)
+time turner (add a class of secret)
+leash (for your pet, be sure to give this list element the same class as you gave your pet)
+Bertie Bott's Every Flavor [Jelly] Beans.
+append the unordered list to your container div
+In your main.css file, give the items with a class of secret an attribute of opacity: 0.5;
+
+In your main.css file, remove the bullet points from the list items
+*/
+$(() => {
+  let container = $("#container");
+  let h1 = '<h1> Hogwarts </h1>'+
+ 		 '<h2> De\'Amber Watson </h2>'+
+ 		 '<h3> Gryffindor </h3>'+
+ 		 '<h4> Starlight </h4>'+
+ 		 '<h4> Holly Wand with Unicorn Hair Core </h4>'
+container.append(h1)
+$("h4:eq(0)").addClass("Owl")
+
+let list = '<ul storage="trunk">'+
+			'<li> Butter Beer </li>'+
+			'<li> Invisibilty Cloak </li>'+
+			'<li> Magic Map</li>'+
+			'<li> Time Turner</li>'
+			'<li> Leash</li>'+
+			'<li> Bertie Bott\'s Every Flavor[Jelly] Beans </li>'+
+			'</ul>'
+container.append(list)
+$("li:eq(1)").addClass("secret")
+$("li:eq(2)").addClass("secret")
+$("li:eq(3)").addClass("secret")
+$("li:eq(4)").addClass("Owl")
+//Test yourself
+//console.log(document);
+  
+});
+
 
 ///////////////////////
 /////// Year 4 ///////
