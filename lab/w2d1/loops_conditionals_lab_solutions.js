@@ -11,7 +11,7 @@ b = b + 5; ----> invalid
 How do we change the value of a variable? write the variable name, followed by = , followed by your new value.
 How do we assign an existing variable to a new variable? using the function method
 */
-/*
+
 // Strings Activity 1 - Switcharoo
 let firstVariable = 'Hello World';
 console.log(firstVariable);
@@ -85,10 +85,86 @@ if (j % 5 === 0) {
     (j % 3 === 0)
     console.log('I found a ' + j + '. Three is a crowd!')
 }
-*/
-//Savings Account
 
-            
-       
+//Savings Account
+let bank_account = 0;
+for (i = 1; i <= 10; i++) {
+    bank_account = bank_account + i
+    console.log(bank_account)
+}
+
+bank_account = 0;
+for (i = 1; i <= 100; i++) {
+    bank_account = bank_account + i
+    finalBalance = bank_account * 2
+    console.log(finalBalance)
+}
+*/
+//Fibonacci
+//Here are some sequences, can you figure out the next number? Can you figure out the pattern so you could write a loop to generate these?:
+/*
+//1, 2, 3, 4
+for (let i = 1; i <= 4; i++) {
+    console.log(i);
+  };
+//2, 4, 6, 8
+
+for (let i = 2; i <= 8; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+ }         
+
+//5, 10, 15, 20
+for (let i = 5; i <= 20; i++) {
+    if (i % 5 === 0) {
+        console.log(i);
+    }
+}
+
+//2, 4, 8, 16, 32
+for (let i = 2; i <= 32; i*=2) {
+        console.log(i)
+
+}
+
+//Here is the challenge: By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+//First just try to console.log the first 10 Fibonacci numbers
+function fibEvenSum (n) {
+    let fibNumSum = 0;
+    let fibCurrent = 0;
+    let fibNext = 1;
+
+    for (let i = 1; i <= n; i++) {
+        //find the next number
+        let fibTotal = fibCurrent + fibNext;
+        //set the first number to the next number
+        fibCurrent = fibNext;
+        //set the second number to total
+        fibNext = fibTotal;
+        if (fibTotal % 2 === 0) {
+            fibNumSum += fibTotal;
+        }
+    }
+    return fibNumSum
+}
+
+fibEvenSum(10);
+console.log(fibEvenSum(10));
+
+//Checkerboard 
+let boardSize = 8;
+let board = "";
+for (let i = 0; i < boardSize; i++) {
+    for ( let j = 0; j < boardsize; j++) {
+        if ((i + j) % 2 === 0)
+            board += " ";
+        else
+            board += "#";
+    }
+    board += "\n";
+}
+
+console.log(board);
 
 
