@@ -104,6 +104,20 @@ $("li:eq(4)").addClass("Owl")
 /////// Year 4 ///////
 /////////////////////
 
+/*You want to show off how many classes you are taking. Make a table
+Right above your table add an h5 that says 'Spring 2017'
+Inside the table add a thead element
+Inside the thead element add two th elements
+in the first th add the text Day
+in the second th add the text Classes
+Create a tr element and add two td elements inside.
+in the first td add the day Monday
+in the second td add the classes you are taking ( Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice, etc.)
+Create more tr elements with tds inside so that you have Monday - Friday and classes each of those days */
+
+//Added this portion in HTML & CSS
+
+
 ///////////////////////
 /////// Year 5 ///////
 /////////////////////
