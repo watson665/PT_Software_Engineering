@@ -131,6 +131,11 @@ toUpperCase('hello');
 //console.log(toUpperCase('hello'));
 
 //3. Write a function, called repMaster, that accepts two arguments, input and a function. Input should be able to be used with the function. The function used as an argument must return a string. repMaster should take the result of the string, passed as an argument to the argument function, and return this result with ' proves that I am the rep MASTER!' concatenated to it.
+const repMaster = function repMaster (input, func) {
+    console.log(`${func(input)} 'proves that I am the rep MASTER!'`);
+}
 
+repMaster("Never give your heart to a blockead", wordReverse);
+repMaster("I finished this practice", toUpperCase);
 
   
