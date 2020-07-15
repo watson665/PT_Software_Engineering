@@ -1,4 +1,6 @@
 //---------------Year 1-----------------------------------
+//Query for your div with the id of container and set it to a variable named $container
+//console.log $container
 const container = document.querySelector('#container');
 console.log(container);
 // Create an <h1> element and set it to a variable called $h1 and console log it
@@ -37,4 +39,55 @@ let h4WandText = document.createTextNode('Holly Wand with Unicorn Hair Core');
 h4Wand.appendChild(h4WandText);
 
 //test yourself
+//console.log(document);
+
+
+//---------------Year 3-----------------------------------
+/*Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
+list items of
+
+butter beer
+invisibility cloak (add a class of secret)
+magic map (add a class of secret)
+time turner (add a class of secret)
+leash (for your pet, be sure to give this list element the same class as you gave your pet)
+Bertie Bott's Every Flavor [Jelly] Beans.
+append the unordered list to your container div */
+
+let ul = document.createElement('UL');
+container.appendChild(ul);
+document.querySelector('UL').setAttribute('storage', 'trunk');
+//console.log(document);
+
+function createLiClass1(str) {
+    let ul = document.querySelector('UL')
+    let li = document.createElement('LI');
+    li.appendChild(document.createTextNode(str));
+    li.classList.add('secret')
+    ul.appendChild(li);
+}
+
+//Can't figure out how to get the classes for each li in 1 function. I've tried switch statements, for loops, & if else statements
+function createLiClass2(str) {
+    let ul = document.querySelector('UL')
+    let li = document.createElement('LI');
+    li.appendChild(document.createTextNode(str));
+    li.classList.add('owl')
+    ul.appendChild(li);
+}
+
+function createLi(str) {
+    let ul = document.querySelector('UL')
+    let li = document.createElement('LI');
+    li.appendChild(document.createTextNode(str));
+    ul.appendChild(li);
+}
+
+let butterBeer = createLi('Butter Beer');
+let invisibilityCloak = createLiClass1('Invisibility Cloak');
+let magicMap = createLiClass1('Magic Map')
+let timeTurner = createLiClass1('Time Turner')
+let leash = createLiClass2('Leash')
+let jellyBeans = createLi('Bertie Bott\'s Every Flavor [Jelly] Beans');
+
 console.log(document);
