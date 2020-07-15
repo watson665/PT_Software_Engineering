@@ -40,7 +40,6 @@ h4Wand.appendChild(h4WandText);
 //test yourself
 //console.log(document);
 
-
 //---------------Year 3-----------------------------------
 /*Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
 list items of
@@ -58,36 +57,33 @@ container.appendChild(ul);
 document.querySelector('UL').setAttribute('storage', 'trunk');
 //console.log(document);
 
-function createLiClass1(str) {
-    let ul = document.querySelector('UL')
-    let li = document.createElement('LI');
-    li.appendChild(document.createTextNode(str));
-    li.classList.add('secret')
-    ul.appendChild(li);
-}
+let butterBeer = document.createElement('LI');
+butterBeer.innerHTML = 'Butter Beer'
+ul.appendChild(butterBeer);
 
-//Can't figure out how to get the classes for each li in 1 function. I've tried switch statements, for loops, & if else statements
-function createLiClass2(str) {
-    let ul = document.querySelector('UL')
-    let li = document.createElement('LI');
-    li.appendChild(document.createTextNode(str));
-    li.classList.add('owl')
-    ul.appendChild(li);
-}
+let invisibilityCloak = document.createElement('LI');
+invisibilityCloak.innerHTML = 'Invisibility Cloak'
+invisibilityCloak.classList.add('secret');
+ul.appendChild(invisibilityCloak);
 
-function createLi(str) {
-    let ul = document.querySelector('UL')
-    let li = document.createElement('LI');
-    li.appendChild(document.createTextNode(str));
-    ul.appendChild(li);
-}
+let magicMap = document.createElement('LI');
+magicMap.innerHTML = 'Magic Map';
+magicMap.classList.add('secret');
+ul.appendChild(magicMap);
 
-createLi('Butter Beer');
-let invisibilityCloak = createLiClass1('Invisibility Cloak');
-let magicMap = createLiClass1('Magic Map')
-let timeTurner = createLiClass1('Time Turner')
-let leash = createLiClass2('Leash')
-let jellyBeans = createLi('Bertie Bott\'s Every Flavor [Jelly] Beans');
+let timeTurner = document.createElement('LI');
+timeTurner.innerHTML = 'Time Turner';
+timeTurner.classList.add('secret');
+ul.appendChild(timeTurner);
+
+let leash = document.createElement('LI');
+leash.innerHTML = 'Leash';
+leash.classList.add('owl');
+ul.appendChild(leash);
+
+let jellyBeans = document.createElement('LI');
+jellyBeans.innerHTML = 'Bertie Bott\'s Every Flavor [Jelly] Beans';
+ul.appendChild(jellyBeans);
 
 //console.log(document);
 
@@ -178,13 +174,13 @@ td6.innerHTML = 'Transfiguration, Flying';
 //---------------Year 5-----------------------------------
 
 //Break your wand! (select the element that contains your wand and remove it)
-h4Wand.innerHTML = '';
+container.removeChild(h4Wand);
 //Class was hard! Drink all your butter beer! (remove just the butter beer from your list)
-let butterBeer = document.children[0].children[1].children[0].children[5].children[0]
-//console.log(butterBeer);
-document.querySelector('UL').removeChild(butterBeer);
+ul.removeChild(butterBeer);
 //Get a new wand (add the same element back with new text describing your new wand. Be sure to insert it after your pet in the DOM)
 h4Wand.innerHTML = 'Holly Wand with Phoenix Feather Core';
+console.log(document);
+container.insertBefore(h4Wand, h4Pet)
 //Make your new wand stand out by adding a color of indigo (or whatever color you like). But do it with magic (jQuery): Don't add this css in your main.css file
 h4Wand.style.color = 'indigo';
 //Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk (list item with the same class as your pet inside unordered list)
@@ -193,3 +189,37 @@ ul.appendChild(h4Pet);
 //Have your pet come back (remove your pet from the DOM, put it back in its original location)
 ul.removeChild(h4Pet);
 container.insertBefore(h4Pet, h4Wand);
+
+//---------------Year 6-----------------------------------
+//Nosey roommate alert! hide (use jQuery method hide) to hide all your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+let hide = document.getElementsByClassName("secret"); 
+    for(let i = 0; i < hide.length; i++){
+        hide[i].style.visibility = "hidden"; 
+        hide[i].style.display = "none";
+    }
+ 
+//Nosey roommate falls asleep 2 seconds later (chain the jQuery method delay on your hide method (give argument of at least 2000) to prevent showing your secret elements too soon.
+//Use jQuery method show to reveal all of your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+
+//cant figure out how to add this back
+
+//Accident! You transmogrified your pet's leash into half cabbage
+//add the class cabbage to your pet's leash. Do not replace your pet's leash's original class. Your pet, which also has the same class should remain unaffected
+//console.log(leash.className)
+//leash.className.classList.add('cabbage')
+//Cant figure this out either
+//add an attribute of color:CHARTREUSE; in your main.css for all elements that have a class of cabbage
+
+//Fix your pet's leash by removing the class of cabbage (be sure to keep your pet's leash's original class)
+
+//---------------Year 7-----------------------------------
+/*
+Though your time at Hogwarts is nearly over, your journey of learning has just begun
+
+Update your class schedule to read 'Fall 2018'
+Celebrate by buying more butter beer! Append a list item with the text 'Butter beer' as the first list item inside your unordered list with the value of trunk
+Whoops! You broke your trunk when you stood on it while singing karaoke. Get a new storage container for your stuff; replace the unodered list's property of trunk with a new property of chest
+Add some CSS to your page. Feel free to experiment and make this page your own
+Take a screenshot of your page and add it to your homework folder
+
+*/
