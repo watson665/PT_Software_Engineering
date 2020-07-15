@@ -28,8 +28,7 @@ h3.appendChild(h3Text);
 //h4 element with your pet's name
 let h4Pet = document.createElement('H4');
 container.appendChild(h4Pet);
-let h4PetText = document.createTextNode('Starlight')
-h4Pet.appendChild(h4PetText);
+h4Pet.innerHTML = 'Starlight'
     //this h4 element should have a class with a value of your pet type (owl, cat, toad, etc)
 h4Pet.classList.add('owl');
 //h4 element with your wand (You can make it whatever you want.
@@ -83,7 +82,7 @@ function createLi(str) {
     ul.appendChild(li);
 }
 
-let butterBeer = createLi('Butter Beer');
+createLi('Butter Beer');
 let invisibilityCloak = createLiClass1('Invisibility Cloak');
 let magicMap = createLiClass1('Magic Map')
 let timeTurner = createLiClass1('Time Turner')
@@ -134,6 +133,7 @@ let td2 = document.createElement('TD');
 tr2.appendChild(td2);
 td2.innerHTML = 'History of Magic, Charms, Care of Magical Creatures';
 
+//tuesday
 let tr3 = document.createElement('TR');
 table.appendChild(tr3);
 let tdTues = document.createElement('TD');
@@ -143,6 +143,7 @@ let td3 = document.createElement('TD');
 tr3.appendChild(td3);
 td3.innerHTML = 'Potions, Herbology, Astronomy';
 
+//wednesday
 let tr4 = document.createElement('TR');
 table.appendChild(tr4);
 let tdWed = document.createElement('TD');
@@ -152,6 +153,7 @@ let td4 = document.createElement('TD');
 tr4.appendChild(td4);
 td4.innerHTML = 'Defense Against the Dark Arts, Muggle Art';
 
+//thursday
 let tr5 = document.createElement('TR');
 table.appendChild(tr5);
 let tdThur = document.createElement('TD');
@@ -161,6 +163,7 @@ let td5 = document.createElement('TD');
 tr5.appendChild(td5);
 td5.innerHTML = 'Quidditch Practice, Earth Magic';
 
+//friday
 let tr6 = document.createElement('TR');
 table.appendChild(tr6);
 let tdFri = document.createElement('TD');
@@ -170,6 +173,23 @@ let td6 = document.createElement('TD');
 tr6.appendChild(td6);
 td6.innerHTML = 'Transfiguration, Flying';
 
-    
+//console.log(document);
 
-console.log(document);
+//---------------Year 5-----------------------------------
+
+//Break your wand! (select the element that contains your wand and remove it)
+h4Wand.innerHTML = '';
+//Class was hard! Drink all your butter beer! (remove just the butter beer from your list)
+let butterBeer = document.children[0].children[1].children[0].children[5].children[0]
+//console.log(butterBeer);
+document.querySelector('UL').removeChild(butterBeer);
+//Get a new wand (add the same element back with new text describing your new wand. Be sure to insert it after your pet in the DOM)
+h4Wand.innerHTML = 'Holly Wand with Phoenix Feather Core';
+//Make your new wand stand out by adding a color of indigo (or whatever color you like). But do it with magic (jQuery): Don't add this css in your main.css file
+h4Wand.style.color = 'indigo';
+//Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk (list item with the same class as your pet inside unordered list)
+container.removeChild(h4Pet);
+ul.appendChild(h4Pet);
+//Have your pet come back (remove your pet from the DOM, put it back in its original location)
+ul.removeChild(h4Pet);
+container.insertBefore(h4Pet, h4Wand);
