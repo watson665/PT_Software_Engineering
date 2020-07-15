@@ -90,4 +90,86 @@ let timeTurner = createLiClass1('Time Turner')
 let leash = createLiClass2('Leash')
 let jellyBeans = createLi('Bertie Bott\'s Every Flavor [Jelly] Beans');
 
+//console.log(document);
+
+//---------------Year 4-----------------------------------
+//Right above your table add an h5 that says 'Spring 2017'
+let h5 = document.createElement('H5');
+document.body.appendChild(h5);
+h5.innerHTML ='Spring 2017';
+
+//Make a table
+let table = document.createElement('TABLE');
+document.body.appendChild(table); 
+
+//inside the table add a thead element
+let head = table.createTHead();
+
+//Create tr elements & append to thead
+let tr1 = document.createElement('TR');
+head.appendChild(tr1);
+
+//add two th elements inside the thead element
+//in the first th add the text Day
+let th1 = document.createElement('TH');
+tr1.appendChild(th1);
+th1.innerHTML = 'Day';
+
+//in the second th add the text Classes
+let th2 = document.createElement('TH');
+tr1.appendChild(th2);
+th2.innerHTML = 'Classes';
+
+//Create a tr element 
+//add two td elements inside
+//in the first td add the day Monday
+//Can't figure out how to make this into a for loop..syntax errors
+let tr2 = document.createElement('TR');
+table.appendChild(tr2);
+let tdMon = document.createElement('TD');
+tr2.appendChild(tdMon);
+ tdMon.innerHTML = 'Monday'
+ //in the second td add the classes you are taking 
+let td2 = document.createElement('TD');
+tr2.appendChild(td2);
+td2.innerHTML = 'History of Magic, Charms, Care of Magical Creatures';
+
+let tr3 = document.createElement('TR');
+table.appendChild(tr3);
+let tdTues = document.createElement('TD');
+tr3.appendChild(tdTues);
+tdTues.innerHTML = 'Tuesday'
+let td3 = document.createElement('TD');
+tr3.appendChild(td3);
+td3.innerHTML = 'Potions, Herbology, Astronomy';
+
+let tr4 = document.createElement('TR');
+table.appendChild(tr4);
+let tdWed = document.createElement('TD');
+tr4.appendChild(tdWed);
+tdWed.innerHTML = 'Wednesday'
+let td4 = document.createElement('TD');
+tr4.appendChild(td4);
+td4.innerHTML = 'Defense Against the Dark Arts, Muggle Art';
+
+let tr5 = document.createElement('TR');
+table.appendChild(tr5);
+let tdThur = document.createElement('TD');
+tr5.appendChild(tdThur);
+tdThur.innerHTML = 'Thursday'
+let td5 = document.createElement('TD');
+tr5.appendChild(td5);
+td5.innerHTML = 'Quidditch Practice, Earth Magic';
+
+let tr6 = document.createElement('TR');
+table.appendChild(tr6);
+let tdFri = document.createElement('TD');
+tr6.appendChild(tdFri);
+tdFri.innerHTML = 'Friday'
+let td6 = document.createElement('TD');
+tr6.appendChild(td6);
+td6.innerHTML = 'Transfiguration, Flying';
+
+    
+
 console.log(document);
