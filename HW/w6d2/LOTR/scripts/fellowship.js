@@ -37,9 +37,9 @@ const lands = ['The-Shire', 'Rivendell', 'Mordor'];
 // ============
 const makeMiddleEarth = () => {
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
-  console.log("making Middle Earth");
+  //console.log("making Middle Earth");
   // console.log("Trying to make middle earth.");
-  console.log("Trying to make middle earth.");
+  //console.log("Trying to make middle earth.");
   // 1. create a section tag with an id of middle-earth
   const $section = $("<section>").attr("id", "middle-earth");
   // 2. append the section to the body of the DOM.
@@ -92,14 +92,14 @@ const makeHobbits = () => {
 // Chapter 3
 // ============
 const keepItSecretKeepItSafe = () => {
-
   // 1. create an empty div with an id of 'the-ring'
-
+  const $ringDiv = $("<div>").attr("id", "the-ring");
   // 2. add the ring as a child of Frodo
-    // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
-
-    // when you think you have given Frodo the ring, check in your Elements tab to see that it works correctly
-
+  // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
+  $(".hobbit")
+    .first()
+    .append($ringDiv);
+  // when you think you have given Frodo the ring, check in your Elements tab to see that it works correctly
 };
 
 // COMMIT YOUR WORK
@@ -109,13 +109,18 @@ const keepItSecretKeepItSafe = () => {
 // Chapter 4
 // ============
 const makeBaddies = () => {
-
   // 1. display an unordered list of baddies in Mordor
+  const $badUl = $("<ul>");
 
   // 2. give each of the baddies a class of "baddy"
-
+  for (let i = 0; i < baddies.length; i++) {
+    const $badLi = $("<li>")
+      .text(baddies[i])
+      .addClass("baddy");
+    $badUl.append($badLi);
+  }
   // 3. remember to append the ul to Mordor
-
+  $("#Mordor").append($badUl);
 };
 
 // COMMIT YOUR WORK
