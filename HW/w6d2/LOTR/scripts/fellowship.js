@@ -171,10 +171,11 @@ const leaveTheShire = () => {
 // Chapter 7
 // ============
 const beautifulStranger = () => {
-
   // 1. change the buddy 'Strider' textnode to "Aragorn"
-     // hint: You can get a list of elements by tag name, such as 'aside'
-
+  // hint: You can get a list of elements by tag name, such as 'aside'
+  $(".buddy")
+    .eq(3)
+    .text("Aragorn");
 };
 
 // COMMIT YOUR WORK
@@ -184,15 +185,16 @@ const beautifulStranger = () => {
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
-
   // 1. create a new div with an id 'the-fellowship'
-
+  const $fellowship = $("<div>").attr("id", "the-fellowship");
   // 2. add an h1 with the text 'The Fellowship' to this new div
-
+  const $fellowshipH1 = $("<h1>").text("The Fellowship");
+  $fellowship.append($fellowshipH1);
   // 3. append the fellowship to middle-earth
-
+  $("#middle-earth").append($fellowship);
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-
+  $(".hobbit").appendTo($fellowship);
+  $(".buddy").appendTo($fellowship);
 };
 
 // COMMIT YOUR WORK
@@ -202,13 +204,17 @@ const forgeTheFellowShip = () => {
 // Chapter 9
 // ============
 const theBalrog = () => {
-
   // 1. change the 'Gandalf' text to 'Gandalf the White'
-
+  $("#the-fellowship")
+    .children()
+    .eq(5)
+    .text("Ganfalf the White");
   // 2. add a class "the-white" to this element
-
+  $("#the-fellowship")
+    .children()
+    .eq(5)
+    .addClass("the-white");
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
-
 };
 
 // COMMIT YOUR WORK
