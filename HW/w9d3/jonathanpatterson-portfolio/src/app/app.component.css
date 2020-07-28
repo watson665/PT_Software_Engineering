@@ -1,0 +1,53 @@
+h2{
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+h4{
+    color: white;
+    text-align: left;
+}
+h5{
+    color: white
+}
+.row {
+    background-color: #FFC432;
+}
+
+
+
+
+
+/*
+.flexbox-container {
+    display: flex;
+}
+
+.flexbox-container > div {
+    border: 1px #ccc solid;
+}
+
+.flex-item-1 {
+    flex:1;
+}
+
+.flex-item-2 {
+    flex:1;
+}
+
+.flex-item-3 {
+    flex:1;
+}
+
+.flex-item-4 {
+    flex:1;
+}
+
+.flex-item-5 {
+    flex:1;
+}
+
+.flex-item-6 {
+    flex:1;
+}
+*/
