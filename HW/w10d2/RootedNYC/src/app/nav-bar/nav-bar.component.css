@@ -3,3 +3,12 @@
     left: 50%;
     position: absolute;
 }
+.navbar {
+    background-color: #CCFF38;
+}
+
+.announcement {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
