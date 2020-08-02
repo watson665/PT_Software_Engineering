@@ -2,14 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderNavComponent } from './header-nav/header-nav.component';
-import { PlantsComponent } from './plants/plants.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderNavComponent,
-    PlantsComponent
+    NavBarComponent
   ],
   imports: [
     BrowserModule

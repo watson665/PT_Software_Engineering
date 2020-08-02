@@ -25,7 +25,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "/Users/pscbus_107/Desktop/github_practice/PT_Software_Engineering/HW/w10d2/RootedNYC/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
